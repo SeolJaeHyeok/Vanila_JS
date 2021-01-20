@@ -19,7 +19,7 @@ function machineNumber() {
 function play(event) {
   event.preventDefault();
   const machineNum = machineNumber();
-  messagebox.innerText = `You chose : ${uservalue.value}, the machine chose : ${machineNum}.`;
+  messagebox.innerText = `You choose : ${uservalue.value}, the machine choose : ${machineNum}.`;
   if (parseInt(uservalue.value) === machineNum) {
     resultMessage.innerText = `You won!`;
   } else {
