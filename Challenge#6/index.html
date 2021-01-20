@@ -2,8 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Challenge #6</title>
   </head>
-  <body></body>
+  <body>
+    <div>
+      <h1>Random Number Game</h1>
+      <h3 class="subtitle"></h3>
+    </div>
+    <div>
+      <input
+        class="js-range"
+        type="range"
+        min="10"
+        max="200"
+        step="5"
+        value="100"
+        list="steplist"
+      />
+      <datalist id="steplist">
+        <option>10</option>
+        <option>50</option>
+        <option>100</option>
+        <option>150</option>
+        <option>200</option>
+      </datalist>
+    </div>
+    <div>
+      <form class="value-input">
+        <span>Guess the number : </span>
+        <input type="number" class="js-value" value="" />
+        <button class="playBtn">Play!</button>
+      </form>
+      <span class="message"> </span>
+      <h2 class="result"></h2>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
